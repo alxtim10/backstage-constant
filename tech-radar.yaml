@@ -15,14 +15,7 @@ entries:
           Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
           ut aliquip ex ea commodo consequat
 
-  - key: code-reviews
-    id: code-reviews
-    title: Code Reviews
-    quadrant: process
-    timeline:
-      - moved: 0
-        ringId: adopt
-        date: 2020-08-06T00:00:00.000Z
+  
 
   - key: mob-programming
     id: mob-programming
