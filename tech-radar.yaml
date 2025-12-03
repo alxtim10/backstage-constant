@@ -1,48 +1,167 @@
 entries:
+  # ──────────────────────────────────────────────
+  # LANGUAGES
+  # ──────────────────────────────────────────────
   - key: typescript
     id: typescript
     title: TypeScript
     quadrant: languages
-    description: >-
-      Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis
-      voluptatibus maiores alias consequatur aut perferendis doloribus
-      asperiores repellat
+    description: >
+      Strongly-typed JavaScript superset widely adopted across frontend and
+      backend services. Improves code maintainability and reduces runtime bugs.
     timeline:
       - moved: -1
-        ringId: adopt
-        date: 2020-08-06T00:00:00.000Z
-        description: >-
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-          ut aliquip ex ea commodo consequat
+        ringId: use
+        date: 2023-10-10T00:00:00.000Z
+        description: >
+          Fully adopted in most new frontend and backend Node.js services.
 
-  
+  - key: javascript
+    id: javascript
+    title: JavaScript
+    quadrant: languages
+    description: >
+      Core web language used across all UI applications; still essential for
+      browser execution even when TypeScript is used.
+    timeline:
+      - moved: -1
+        ringId: use
+        date: 2023-10-10T00:00:00.000Z
+        description: >
+          Stable usage for UI development; long-term standard.
 
+  - key: java
+    id: java
+    title: Java
+    quadrant: languages
+    description: >
+      Enterprise-grade language used heavily in backend systems, especially for
+      high-performance, mission-critical APIs.
+    timeline:
+      - moved: 0
+        ringId: use
+        date: 2023-10-10T00:00:00.000Z
+
+  - key: golang
+    id: golang
+    title: Go (Golang)
+    quadrant: languages
+    description: >
+      Lightweight, high-performance systems language ideal for infrastructure,
+      microservices, and CLI tooling.
+    timeline:
+      - moved: 1
+        ringId: trial
+        date: 2024-02-01T00:00:00.000Z
+        description: >
+          Under evaluation for new microservices where concurrency and performance matter.
+
+  # ──────────────────────────────────────────────
+  # FRAMEWORKS
+  # ──────────────────────────────────────────────
+  - key: nextjs
+    id: nextjs
+    title: Next.js
+    quadrant: frameworks
+    description: >
+      React meta-framework for building scalable web applications with SSR, SSG,
+      and app directory features.
+    timeline:
+      - moved: -1
+        ringId: use
+        date: 2024-01-10T00:00:00.000Z
+        description: >
+          Adopted as the standard frontend framework for new UI projects.
+
+  - key: quarkus
+    id: quarkus
+    title: Quarkus
+    quadrant: frameworks
+    description: >
+      A modern Java framework optimized for Kubernetes-native and serverless
+      applications. Fast startup time and low memory usage.
+    timeline:
+      - moved: 1
+        ringId: assess
+        date: 2024-01-10T00:00:00.000Z
+        description: >
+          Evaluation underway for microservice modernization.
+
+  - key: springboot
+    id: springboot
+    title: Spring Boot
+    quadrant: frameworks
+    description: >
+      Mature Java framework widely adopted for enterprise backend services.
+    timeline:
+      - moved: -1
+        ringId: use
+        date: 2023-10-10T00:00:00.000Z
+
+  - key: astro
+    id: astro
+    title: Astro
+    quadrant: frameworks
+    description: >
+      Modern frontend framework focusing on content-driven websites with zero
+      JavaScript by default.
+    timeline:
+      - moved: 1
+        ringId: trial
+        date: 2024-03-01T00:00:00.000Z
+
+  # ──────────────────────────────────────────────
+  # PROCESS
+  # ──────────────────────────────────────────────
   - key: mob-programming
     id: mob-programming
     title: Mob Programming
     quadrant: process
+    description: >
+      Collaborative programming practice where the team works together on the
+      same problem to increase knowledge-sharing and reduce defects.
     timeline:
       - moved: 0
         ringId: assess
-        date: 2020-08-06T00:00:00.000Z
+        date: 2023-10-10T00:00:00.000Z
 
   - key: docs-like-code
     id: docs-like-code
     title: Docs-like-code
     quadrant: process
+    description: >
+      Treating documentation the same way as code—version-controlled, reviewed,
+      and automated—which improves accuracy and maintainability.
     timeline:
-      - moved: 0
-        ringId: adopt
-        date: 2020-08-06T00:00:00.000Z
+      - moved: -1
+        ringId: use
+        date: 2023-10-10T00:00:00.000Z
 
   - key: force-push
     id: force-push
-    title: Force push to master
+    title: Force push to main/master
     quadrant: process
+    description: >
+      Dangerous practice that rewrites Git history and can cause data loss.
     timeline:
       - ringId: hold
-        date: 2020-08-06T00:00:00.000Z
+        date: 2023-10-10T00:00:00.000Z
 
+  - key: trunk-based-development
+    id: trunk-based-development
+    title: Trunk-Based Development
+    quadrant: process
+    description: >
+      Modern branching model promoting small, frequent merges into the main
+      branch to reduce integration issues.
+    timeline:
+      - moved: 1
+        ringId: trial
+        date: 2024-01-10T00:00:00.000Z
+
+  # ──────────────────────────────────────────────
+  # INFRASTRUCTURE
+  # ──────────────────────────────────────────────
   - key: github-actions
     id: github-actions
     title: GitHub Actions
@@ -50,14 +169,52 @@ entries:
     links:
       - url: https://github.com
         title: Learn more
+    description: >
+      Cloud-based CI/CD platform for workflow automation, deployments, and
+      code-quality tooling.
     timeline:
-      - ringId: adopt
-        date: 2020-08-06T00:00:00.000Z
-        description: long description
+      - ringId: use
+        date: 2023-10-10T00:00:00.000Z
       - ringId: trial
         date: 2020-07-05T00:00:00.000Z
-        description: long description
 
+  - key: docker
+    id: docker
+    title: Docker
+    quadrant: infrastructure
+    description: >
+      Standard containerization tool enabling consistent development and
+      deployment environments.
+    timeline:
+      - moved: -1
+        ringId: use
+        date: 2023-10-10T00:00:00.000Z
+
+  - key: kubernetes
+    id: kubernetes
+    title: Kubernetes
+    quadrant: infrastructure
+    description: >
+      Container orchestration platform used to scale and manage microservices in
+      production environments.
+    timeline:
+      - moved: 0
+        ringId: use
+        date: 2023-10-10T00:00:00.000Z
+
+  - key: terraform
+    id: terraform
+    title: Terraform
+    quadrant: infrastructure
+    description: >
+      Infrastructure-as-code tool enabling automated provisioning of cloud
+      resources across multiple providers.
+    timeline:
+      - moved: 0
+        ringId: use
+        date: 2023-10-10T00:00:00.000Z
+
+# ──────────────────────────────────────────────
 quadrants:
   - id: infrastructure
     name: Infrastructure
@@ -68,24 +225,25 @@ quadrants:
   - id: process
     name: Process
 
+# ──────────────────────────────────────────────
 rings:
-  - id: adopt
-    name: ADOPT
+  - id: use
+    name: USE
     color: "#5BA300"
     description: >
-      Commodi accusantium culpa sed itaque excepturi rem eum nulla possimus.
+      Mature, stable technologies that the team recommends using for most new projects.
   - id: trial
     name: TRIAL
     color: "#009EB0"
     description: >
-      Recusandae possimus ipsum dolores.
+      Promising technologies worth trying on limited-scope projects.
   - id: assess
     name: ASSESS
     color: "#C7BA00"
     description: >
-      In asperiores repellat error recusandae et adipisci laborum porro.
+      Technologies being researched or evaluated; not yet ready for broad usage.
   - id: hold
     name: HOLD
     color: "#E09B96"
     description: >
-      Esse mollitia in.
+      Discouraged technologies or practices due to better alternatives or risks.
