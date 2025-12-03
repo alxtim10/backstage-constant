@@ -1,13 +1,11 @@
 entries:
-  # ──────────────────────────────────────────────
-  # LANGUAGES
-  # ──────────────────────────────────────────────
+  # Languages
   - key: typescript
     id: typescript
     title: TypeScript
     quadrant: languages
     description: >
-      Strongly-typed JavaScript superset widely adopted across frontend and
+      Strongly typed JavaScript superset widely adopted across frontend and
       backend services. Improves code maintainability and reduces runtime bugs.
     timeline:
       - moved: -1
@@ -21,22 +19,20 @@ entries:
     title: JavaScript
     quadrant: languages
     description: >
-      Core web language used across all UI applications; still essential for
-      browser execution even when TypeScript is used.
+      Core web language used across UI applications. Still essential for
+      browser execution even when TypeScript is used as the main language.
     timeline:
       - moved: -1
         ringId: use
         date: 2023-10-10T00:00:00.000Z
-        description: >
-          Stable usage for UI development; long-term standard.
 
   - key: java
     id: java
     title: Java
     quadrant: languages
     description: >
-      Enterprise-grade language used heavily in backend systems, especially for
-      high-performance, mission-critical APIs.
+      Enterprise backend language used heavily in mission critical services.
+      Reliable, stable, and supported across cloud environments.
     timeline:
       - moved: 0
         ringId: use
@@ -47,52 +43,44 @@ entries:
     title: Go (Golang)
     quadrant: languages
     description: >
-      Lightweight, high-performance systems language ideal for infrastructure,
-      microservices, and CLI tooling.
+      Lightweight and fast systems language ideal for microservices, CLIs,
+      and high performance APIs.
     timeline:
       - moved: 1
         ringId: trial
         date: 2024-02-01T00:00:00.000Z
-        description: >
-          Under evaluation for new microservices where concurrency and performance matter.
 
-  # ──────────────────────────────────────────────
-  # FRAMEWORKS
-  # ──────────────────────────────────────────────
+  # Frameworks
   - key: nextjs
     id: nextjs
     title: Next.js
     quadrant: frameworks
     description: >
-      React meta-framework for building scalable web applications with SSR, SSG,
-      and app directory features.
+      React based framework that supports SSR, SSG, and modern application
+      patterns. Recommended for new UI projects.
     timeline:
       - moved: -1
         ringId: use
         date: 2024-01-10T00:00:00.000Z
-        description: >
-          Adopted as the standard frontend framework for new UI projects.
 
   - key: quarkus
     id: quarkus
     title: Quarkus
     quadrant: frameworks
     description: >
-      A modern Java framework optimized for Kubernetes-native and serverless
-      applications. Fast startup time and low memory usage.
+      Modern Java framework optimized for Kubernetes native and serverless
+      applications. Fast startup and low memory usage.
     timeline:
       - moved: 1
         ringId: assess
         date: 2024-01-10T00:00:00.000Z
-        description: >
-          Evaluation underway for microservice modernization.
 
   - key: springboot
     id: springboot
     title: Spring Boot
     quadrant: frameworks
     description: >
-      Mature Java framework widely adopted for enterprise backend services.
+      Mature Java framework widely adopted for backend microservices.
     timeline:
       - moved: -1
         ringId: use
@@ -103,23 +91,20 @@ entries:
     title: Astro
     quadrant: frameworks
     description: >
-      Modern frontend framework focusing on content-driven websites with zero
-      JavaScript by default.
+      Framework focused on content based websites with minimal JavaScript.
     timeline:
       - moved: 1
         ringId: trial
         date: 2024-03-01T00:00:00.000Z
 
-  # ──────────────────────────────────────────────
-  # PROCESS
-  # ──────────────────────────────────────────────
+  # Processes
   - key: mob-programming
     id: mob-programming
     title: Mob Programming
     quadrant: process
     description: >
-      Collaborative programming practice where the team works together on the
-      same problem to increase knowledge-sharing and reduce defects.
+      Team based programming practice that increases knowledge sharing
+      and reduces defects by working together on the same task.
     timeline:
       - moved: 0
         ringId: assess
@@ -127,11 +112,11 @@ entries:
 
   - key: docs-like-code
     id: docs-like-code
-    title: Docs-like-code
+    title: Docs Like Code
     quadrant: process
     description: >
-      Treating documentation the same way as code—version-controlled, reviewed,
-      and automated—which improves accuracy and maintainability.
+      Approach where documentation is handled like code. Written in plain text,
+      version controlled, reviewed, and automated for better accuracy.
     timeline:
       - moved: -1
         ringId: use
@@ -139,52 +124,49 @@ entries:
 
   - key: force-push
     id: force-push
-    title: Force push to main/master
+    title: Force Push to Main Branch
     quadrant: process
     description: >
-      Dangerous practice that rewrites Git history and can cause data loss.
+      Unsafe Git practice that rewrites history and can cause data loss.
+      Should be avoided except in controlled maintenance situations.
     timeline:
       - ringId: hold
         date: 2023-10-10T00:00:00.000Z
 
   - key: trunk-based-development
     id: trunk-based-development
-    title: Trunk-Based Development
+    title: Trunk Based Development
     quadrant: process
     description: >
-      Modern branching model promoting small, frequent merges into the main
-      branch to reduce integration issues.
+      Development strategy that promotes frequent small merges into the main
+      branch to reduce integration problems and speed up delivery.
     timeline:
       - moved: 1
         ringId: trial
         date: 2024-01-10T00:00:00.000Z
 
-  # ──────────────────────────────────────────────
-  # INFRASTRUCTURE
-  # ──────────────────────────────────────────────
+  # Infrastructure
   - key: github-actions
     id: github-actions
     title: GitHub Actions
     quadrant: infrastructure
+    description: >
+      Cloud based CI/CD automation platform used for build pipelines,
+      code quality automation, and deployment flows.
     links:
       - url: https://github.com
         title: Learn more
-    description: >
-      Cloud-based CI/CD platform for workflow automation, deployments, and
-      code-quality tooling.
     timeline:
       - ringId: use
         date: 2023-10-10T00:00:00.000Z
-      - ringId: trial
-        date: 2020-07-05T00:00:00.000Z
 
   - key: docker
     id: docker
     title: Docker
     quadrant: infrastructure
     description: >
-      Standard containerization tool enabling consistent development and
-      deployment environments.
+      Containerization platform used for consistent environment setup,
+      local development, and application deployment.
     timeline:
       - moved: -1
         ringId: use
@@ -195,11 +177,10 @@ entries:
     title: Kubernetes
     quadrant: infrastructure
     description: >
-      Container orchestration platform used to scale and manage microservices in
-      production environments.
+      Orchestration platform used for scaling container based applications
+      and managing production workloads.
     timeline:
-      - moved: 0
-        ringId: use
+      - ringId: use
         date: 2023-10-10T00:00:00.000Z
 
   - key: terraform
@@ -207,14 +188,14 @@ entries:
     title: Terraform
     quadrant: infrastructure
     description: >
-      Infrastructure-as-code tool enabling automated provisioning of cloud
-      resources across multiple providers.
+      Infrastructure as code tool used to automate cloud provisioning
+      and create reproducible environments.
     timeline:
       - moved: 0
         ringId: use
         date: 2023-10-10T00:00:00.000Z
 
-# ──────────────────────────────────────────────
+# Quadrants
 quadrants:
   - id: infrastructure
     name: Infrastructure
@@ -225,25 +206,25 @@ quadrants:
   - id: process
     name: Process
 
-# ──────────────────────────────────────────────
+# Rings
 rings:
   - id: use
     name: USE
     color: "#5BA300"
     description: >
-      Mature, stable technologies that the team recommends using for most new projects.
+      Technologies recommended for adoption in most new projects.
   - id: trial
     name: TRIAL
     color: "#009EB0"
     description: >
-      Promising technologies worth trying on limited-scope projects.
+      Technologies suitable for pilot projects or controlled experiments.
   - id: assess
     name: ASSESS
     color: "#C7BA00"
     description: >
-      Technologies being researched or evaluated; not yet ready for broad usage.
+      Technologies being evaluated or researched before committing to broader use.
   - id: hold
     name: HOLD
     color: "#E09B96"
     description: >
-      Discouraged technologies or practices due to better alternatives or risks.
+      Technologies not recommended for use due to risk, maturity, or better alternatives.
